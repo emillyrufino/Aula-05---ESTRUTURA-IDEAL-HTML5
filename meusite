@@ -1,0 +1,126 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Conteúdo principal */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+section, article {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Aside */
+aside {
+  margin-top: 30px;
+  background-color: #e0e0e0;
+  padding: 15px;
+  border-left: 4px solid #004080;
+}
+
+/* Rodapé */
+footer {
+  margin-top: 40px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Site Exemplo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Bem-vindo ao Meu Site</h1>
+    <nav>
+      <ul>
+        <li><a href="#artigo1">Artigo 1</a></li>
+        <li><a href="#artigo2">Artigo 2</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre este site</h2>
+      <p>Este é um exemplo de página web feita com HTML5 e CSS, contendo todas as seções estruturais principais e uma aparência moderna.</p>
+    </section>
+
+    <article id="artigo1">
+      <h2>Artigo 1: A importância do HTML5</h2>
+      <p>O HTML5 trouxe diversas melhorias na estruturação do conteúdo web, com novas tags semânticas que facilitam a organização e acessibilidade.</p>
+    </article>
+
+    <article id="artigo2">
+      <h2>Artigo 2: Usando CSS para transformar seu site</h2>
+      <p>Com o CSS, podemos transformar um layout simples em algo visualmente agradável, com cores, posicionamento, responsividade e mais.</p>
+    </article>
+  </main>
+
+  <aside>
+    <h3>Curiosidades</h3>
+    <ul>
+      <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">Documentação HTML</a></li>
+      <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">Documentação CSS</a></li>
+      <li>"Design é a alma de tudo criado pelo homem." - Steve Jobs</li>
+    </ul>
+  </aside>
+
+  <footer>
+    <p>&copy; 2025 - Desenvolvido por [Seu Nome]</p>
+  </footer>
+
+</body>
+</html>
