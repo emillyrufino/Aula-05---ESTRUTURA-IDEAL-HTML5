@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz - Conhecimento Geral</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Quiz: Conhecimento Geral</h1>
+    <nav>
+      <ul>
+        <li><a href="#quiz">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre o Quiz</h2>
+      <p>Teste seus conhecimentos gerais com este quiz interativo. Boa sorte!</p>
+    </section>
+
+    <section id="quiz">
+      <h2>Responda as perguntas abaixo:</h2>
+
+      <form id="quiz-form">
+        <article class="question">
+          <h3>1. Qual é a capital do Brasil?</h3>
+          <label><input type="radio" name="q1" value="a" /> Rio de Janeiro</label><br />
+          <label><input type="radio" name="q1" value="b" /> São Paulo</label><br />
+          <label><input type="radio" name="q1" value="c" /> Brasília</label><br />
+        </article>
+
+        <article class="question">
+          <h3>2. Quem escreveu "Dom Quixote"?</h3>
+          <label><input type="radio" name="q2" value="a" /> William Shakespeare</label><br />
+          <label><input type="radio" name="q2" value="b" /> Miguel de Cervantes</label><br />
+          <label><input type="radio" name="q2" value="c" /> Machado de Assis</label><br />
+        </article>
+
+        <article class="question">
+          <h3>3. Qual é o elemento químico representado por 'O'?</h3>
+          <label><input type="radio" name="q3" value="a" /> Ouro</label><br />
+          <label><input type="radio" name="q3" value="b" /> Oxigênio</label><br />
+          <label><input type="radio" name="q3" value="c" /> Osmium</label><br />
+        </article>
+
+        <button type="submit">Enviar Respostas</button>
+      </form>
+
+      <div id="resultado"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Quiz desenvolvido por [Seu Nome]</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+section, article {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #004080;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #003366;
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: green;
+}
+
+footer {
+  margin-top: 40px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+document.getElementById("quiz-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  let pontuacao = 0;
+
+  const respostasCorretas = {
+    q1: "c",
+    q2: "b",
+    q3: "b"
+  };
+
+  for (let pergunta in respostasCorretas) {
+    const selecionada = document.querySelector(`input[name="${pergunta}"]:checked`);
+    if (selecionada && selecionada.value === respostasCorretas[pergunta]) {
+      pontuacao++;
+    }
+  }
+
+  const resultado = document.getElementById("resultado");
+  resultado.textContent = `Você acertou ${pontuacao} de 3 perguntas!`;
+});
