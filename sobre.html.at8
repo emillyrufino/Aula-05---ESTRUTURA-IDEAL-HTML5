@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sobre o Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Quiz: Mundo da Barbie 💖</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="resultado.html">Resultado</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Sobre o Quiz</h2>
+      <p>Você conhece bem a Barbie? Teste seus conhecimentos sobre a boneca mais famosa do mundo!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Quiz Barbie criado por [Seu Nome]</p>
+  </footer>
+</body>
+</html>
