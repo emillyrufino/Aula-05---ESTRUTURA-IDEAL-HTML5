@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contato</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Quiz: Mundo da Barbie 💖</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="resultado.html">Resultado</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Fale Conosco</h2>
+      <p>Envie dúvidas, sugestões ou elogios para: <strong>contato@barbiequiz.com</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Quiz Barbie criado por [Seu Nome]</p>
+  </footer>
+</body>
+</html>
