@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz - Mundo da Barbie</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Quiz: Mundo da Barbie 💖</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="resultado.html">Resultado</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Bem-vindo ao Mundo da Barbie!</h2>
+      <p>Prepare-se para um quiz cheio de charme, estilo e diversão! 🌟</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Quiz Barbie criado por [Seu Nome]</p>
+  </footer>
+</body>
+</html>
